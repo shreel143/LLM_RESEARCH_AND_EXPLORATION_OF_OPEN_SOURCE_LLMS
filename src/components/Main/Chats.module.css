@@ -1,0 +1,27 @@
+.cont {
+  display: grid;
+  grid-template-columns: 100vw;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.userChat {
+  display: grid;
+  background-color: #023047;
+}
+
+.usertext {
+  color: #8ecae6;
+}
+
+.botChat {
+  display: grid;
+  background-color: #8ecae6;
+}
+
+.bottext {
+  color: #023047;
+}

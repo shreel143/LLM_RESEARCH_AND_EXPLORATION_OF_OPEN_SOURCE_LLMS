@@ -1,0 +1,111 @@
+.cont {
+}
+
+.head {
+  background-color: #fb8500;
+  color: #ffb703;
+  height: 5vh;
+}
+
+.head > h1 {
+  margin: 0;
+  text-shadow: 2px 2px #ff0000;
+}
+
+.body {
+  height: 95vh;
+  background-color: #219ebc;
+  display: grid;
+  grid-template-rows: 90vh 5vh;
+}
+
+.inputCont {
+  display: grid;
+  grid-template-rows: 5vh;
+  background-color: #d5bdaf;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 80vw 20vw;
+  justify-content: space-around;
+  grid-template-rows: 100%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.input {
+  border: none;
+  padding: 0.7rem;
+  /* border-radius: 1rem; */
+  background: #e8e8e8;
+  /* box-shadow: 20px 20px 60px #c5c5c5, -20px -20px 60px #ffffff; */
+  transition: 0.3s;
+}
+
+.input:focus {
+  outline-color: #e8e8e8;
+  background: #e8e8e8;
+  box-shadow: inset 20px 20px 60px #c5c5c5, inset -20px -20px 60px #ffffff;
+  transition: 0.3s;
+}
+
+.button {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #4f4f4f;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  font-size: 19px;
+  color: black;
+  z-index: 1;
+}
+
+.button:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button:after {
+  content: '';
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #39bda7;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button:hover {
+  color: #ffffff;
+  border: 1px solid #39bda7;
+}
+
+.button:hover:before {
+  top: -35%;
+  background-color: #39bda7;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button:hover:after {
+  top: -45%;
+  background-color: #39bda7;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
